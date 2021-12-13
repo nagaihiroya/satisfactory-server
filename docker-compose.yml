@@ -15,4 +15,6 @@ services:
             - PGID=1000
             - PUID=1000
             - STEAMBETA=true
+            - AUTOPAUSE=false
+            - AUTOSAVEONDISCONNECT=true
         restart: unless-stopped
