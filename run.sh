@@ -56,6 +56,8 @@ if ! [[ "${SKIPUPDATE,,}" == "true" ]]; then
     if [[ "${STEAMBETA,,}" == "true" ]]; then
         printf "Experimental flag is set. Experimental will be downloaded instead of Early Access.\\n"
         STEAMBETAFLAG=" -beta experimental validate"
+    else
+        STEAMBETAFLAG=" -beta public validate"	    
     fi
 
     space=$(stat -f --format="%a*%S" .)

@@ -14,5 +14,5 @@ services:
             - MAXPLAYERS=4
             - PGID=1000
             - PUID=1000
-            - STEAMBETA=true
+            - STEAMBETA=false
         restart: unless-stopped
