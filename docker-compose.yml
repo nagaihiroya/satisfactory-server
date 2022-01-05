@@ -17,4 +17,6 @@ services:
             - STEAMBETA=false
             - AUTOPAUSE=false
             - AUTOSAVEONDISCONNECT=true
+            - AUTOSAVENUM=5
+            - AUTOSAVEINTERVAL=1800
         restart: unless-stopped
